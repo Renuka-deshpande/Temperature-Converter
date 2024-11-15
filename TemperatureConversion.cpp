@@ -8,7 +8,7 @@ double CelsiustoKelvin(double celsius){
     return celsius+273.15;
 }
 double FahrenheittoCelsius(double fahrenheit){
-    return (fahrenheit-32)*9/5;
+    return (fahrenheit-32)*5/9;
 }
 double FahrenheittoKelvin(double fahrenheit){
     double val=FahrenheittoCelsius(fahrenheit);
@@ -34,7 +34,7 @@ int main(){
     switch (unit)
     {
     case 'C':
-    case'c':
+    case 'c':
         cout<<"Original Temperature "<<temperature<<" °C"<<endl;
         cout<<"In Fahrenheit "<<CelsiustoFahrenheit(temperature)<<" °F"<<endl;
         cout<<"In Kelvin "<<CelsiustoKelvin(temperature)<<" K"<<endl;
